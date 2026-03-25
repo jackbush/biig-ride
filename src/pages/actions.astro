@@ -8,7 +8,16 @@ import Layout from '../layouts/Layout.astro';
     <p class="subtitle">Things to do before and during the tour. Check them off as you go — state is local to your browser.</p>
   </div>
 
-  <h2>Before Departure (April – May)</h2>
+  <nav class="toc" aria-label="Page contents">
+    <div class="toc-label">Contents</div>
+    <ul>
+      <li><a href="#before-departure">Before Departure</a></li>
+      <li><a href="#on-the-road">On the Road</a></li>
+      <li><a href="#bookings">Bookings & Reservations</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="before-departure">Before Departure (April – May)</h2>
 
   <ul class="checklist" id="checklist-pre">
     <li>
@@ -106,7 +115,7 @@ import Layout from '../layouts/Layout.astro';
     </li>
   </ul>
 
-  <h2>On the Road</h2>
+  <h2 id="on-the-road">On the Road</h2>
 
   <ul class="checklist" id="checklist-road">
     <li>
@@ -174,7 +183,7 @@ import Layout from '../layouts/Layout.astro';
     </li>
   </ul>
 
-  <h2>Bookings & Reservations</h2>
+  <h2 id="bookings">Bookings & Reservations</h2>
 
   <ul class="checklist" id="checklist-bookings">
     <li>

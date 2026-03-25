@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
 
 :root {
-  --bg: #1a1816;
-  --bg-surface: #232120;
-  --bg-elevated: #2c2a28;
-  --text: #e8e0d4;
-  --text-muted: #9a918a;
-  --text-dim: #6b6460;
-  --accent: #c47d2e;
-  --accent-light: #d4a05a;
-  --accent-bg: rgba(196, 125, 46, 0.08);
-  --border: #3a3634;
-  --border-light: #2e2c2a;
-  --green: #7a9f7e;
-  --green-bg: rgba(122, 159, 126, 0.1);
-  --red: #c46b5e;
-  --red-bg: rgba(196, 107, 94, 0.08);
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-body: 'DM Sans', -apple-system, sans-serif;
+  --bg: #161616;
+  --bg-surface: #1e1e1e;
+  --bg-elevated: #272727;
+  --text: #e2e2e2;
+  --text-muted: #888;
+  --text-dim: #555;
+  --accent: #e8820c;
+  --accent-light: #f09828;
+  --accent-bg: rgba(232, 130, 12, 0.1);
+  --border: #2d2d2d;
+  --border-light: #232323;
+  --green: #52c278;
+  --green-bg: rgba(82, 194, 120, 0.1);
+  --red: #e05a5a;
+  --red-bg: rgba(224, 90, 90, 0.1);
+  --font: 'DM Sans', -apple-system, sans-serif;
   --content-width: 52rem;
   --gutter: 1.5rem;
 }
@@ -34,7 +33,7 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font);
   font-weight: 400;
   line-height: 1.65;
   color: var(--text);
@@ -67,17 +66,15 @@ body {
   padding: 0 var(--gutter);
   display: flex;
   align-items: baseline;
-  gap: 2rem;
-  flex-wrap: wrap;
 }
 
 .nav-title {
-  font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 0.875rem;
   color: var(--text);
   text-decoration: none;
-  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .nav-links {
@@ -85,6 +82,7 @@ body {
   gap: 1.5rem;
   list-style: none;
   padding: 0;
+  margin-left: auto;
 }
 
 .nav-links a {
@@ -105,8 +103,8 @@ body {
 /* ---- Typography ---- */
 
 h1, h2, h3, h4 {
-  font-family: var(--font-display);
-  font-weight: 600;
+  font-family: var(--font);
+  font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.2;
 }
@@ -117,7 +115,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
@@ -125,7 +123,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 0.75rem;
   color: var(--accent-light);
@@ -133,9 +132,9 @@ h3 {
 
 h4 {
   font-size: 1rem;
+  font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
-  font-weight: 700;
 }
 
 p {
@@ -170,14 +169,14 @@ hr {
 /* ---- Page header ---- */
 
 .page-header {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .page-header .subtitle {
   font-size: 1.05rem;
   color: var(--text-muted);
-  font-weight: 300;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.6;
   max-width: 38rem;
 }
 
@@ -205,6 +204,50 @@ hr {
   border-radius: 50%;
   background: var(--accent);
   display: inline-block;
+}
+
+/* ---- Table of contents ---- */
+
+.toc {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.875rem;
+}
+
+.toc-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+}
+
+.toc ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.toc li {
+  margin-bottom: 0.3rem;
+  break-inside: avoid;
+}
+
+.toc a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.toc a:hover {
+  color: var(--accent);
+  text-decoration: none;
 }
 
 /* ---- Lists ---- */
@@ -302,11 +345,11 @@ blockquote p:last-child {
 }
 
 .callout-title {
-  font-weight: 600;
-  font-size: 0.8rem;
+  font-weight: 700;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin-bottom: 0.35rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
 }
 
 /* ---- Cards / Leg sections ---- */
@@ -322,7 +365,7 @@ blockquote p:last-child {
 .leg-card h3 {
   margin-top: 0;
   color: var(--text);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .leg-card .leg-meta {
@@ -338,7 +381,7 @@ blockquote p:last-child {
 .tag {
   display: inline-block;
   font-size: 0.7rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   padding: 0.2rem 0.5rem;
@@ -428,7 +471,7 @@ blockquote p:last-child {
 
 .gear-item .item-status {
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -451,9 +494,9 @@ blockquote p:last-child {
 
 @media (max-width: 640px) {
   h1 { font-size: 1.75rem; }
-  h2 { font-size: 1.25rem; }
-  .nav-inner { gap: 1rem; }
+  h2 { font-size: 1.2rem; }
   .nav-links { gap: 1rem; }
+  .toc ul { columns: 1; }
   .gear-item { grid-template-columns: 1fr; gap: 0.25rem; }
   .leg-card { padding: 1.25rem; }
 }
@@ -461,8 +504,8 @@ blockquote p:last-child {
 /* ---- Markdown content (route page) ---- */
 
 .prose h1 { font-size: 2rem; }
-.prose h2 { font-size: 1.4rem; }
-.prose h3 { font-size: 1.1rem; }
+.prose h2 { font-size: 1.35rem; }
+.prose h3 { font-size: 1.05rem; }
 
 .prose > * + * {
   margin-top: 0;
