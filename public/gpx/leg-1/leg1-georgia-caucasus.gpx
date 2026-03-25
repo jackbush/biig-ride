@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="bikepacking-tour-planner"
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <name>Georgia - Caucasus Highlights (Leg 1)</name>
+    <desc>Two-week highlight route through the eastern Georgian Caucasus. Late May timing — Chaukhi Pass likely closed, route uses road connection Barisakho-Shatili instead. Truso Valley and Juta as out-and-back explorations from Stepantsminda, then road to Shatili, then Abano Pass to Tusheti.
+
+CRITICAL TIMING NOTES:
+- Chaukhi Pass (3,340m) usually opens second half of June. In late May it will likely be snow-blocked. Do NOT attempt without local confirmation.
+- Abano Pass road to Tusheti usually opens late May/early June. Check in Alvani or Akhmeta before committing.
+- Truso Valley and Juta Valley are accessible from mid-May.
+- If Abano Pass is closed, skip Tusheti and extend time in Kazbegi area or head directly to Turkey.
+
+ROUTE STRUCTURE:
+Day 1-2: Tbilisi to Stepantsminda via Georgian Military Highway (155km, paved, heavy traffic — consider marshrutka for first 120km to Gudauri, ride the good section)
+Day 3: Rest day / Gergeti Trinity Church ride
+Day 4-5: Truso Valley out-and-back (dirt road, ~50km round trip)
+Day 6-7: Juta Valley exploration (dirt road to Juta, hike toward Chaukhi if snow allows, ~30km round trip)
+Day 8: Stepantsminda to Barisakho (road south via Military Highway, turn east, ~90km)
+Day 9-10: Barisakho to Shatili (rough 4x4 road, ~70km, beautiful gorge riding)
+Day 11: Shatili rest/explore (medieval fortress complex, Anatori crypts nearby)
+Day 12: Shatili to Alvani via backtrack or arrange transfer to connect to Abano Pass road
+Day 13-14: Abano Pass road to Omalo, Tusheti (~70km, 2,826m pass, spectacular hairpins)
+Day 15: Explore Tusheti (Dartlo, Diklo villages, watchtowers)
+Day 16: Omalo to Alvani (descend Abano Pass or arrange 4x4 transfer)
+Day 17: Alvani/Akhmeta to Tbilisi (marshrutka or ride, ~150km)
+Day 18: Fly Tbilisi to eastern Turkey border area
+
+ALTERNATIVE IF ABANO PASS CLOSED:
+Skip Tusheti. Extend Shatili by 1-2 days (explore Khevsureti valleys). Return to Tbilisi. Fly to Turkey. Tusheti can be skipped without ruining the trip — Georgia delivers regardless.</desc>
+    <author><name>bikepacking-tour-planner</name></author>
+  </metadata>
+
+  <!-- ===== WAYPOINTS ===== -->
+
+  <!-- Tbilisi -->
+  <wpt lat="41.7151" lon="44.8271">
+    <ele>450</ele>
+    <name>Tbilisi</name>
+    <desc>Start. Fly in from London. Bike shops near Vake Park for last-minute needs. Good singletrack at Udzo Monastery trail if you have a spare day. Stow bike box at accommodation.</desc>
+    <type>start</type>
+  </wpt>
+
+  <!-- Georgian Military Highway landmarks -->
+  <wpt lat="42.1647" lon="44.7017">
+    <ele>880</ele>
+    <name>Ananuri Fortress</name>
+    <desc>17th-century fortress complex overlooking Zhinvali Reservoir. Worth a 30-min stop. If you rode from Tbilisi, this is ~65km in — good lunch stop.</desc>
+    <type>poi</type>
+  </wpt>
+
+  <wpt lat="42.4614" lon="44.4747">
+    <ele>2200</ele>
+    <name>Gudauri</name>
+    <desc>Ski resort town. If you took marshrutka from Tbilisi, get off here and start riding. Services, ATM, small shops. From here the Military Highway gets scenic.</desc>
+    <type>resupply</type>
+  </wpt>
+
+  <wpt lat="42.5033" lon="44.4581">
+    <ele>2379</ele>
+    <name>Jvari Pass (Cross Pass)</name>
+    <desc>Highest point on the Georgian Military Highway. Russia-Georgia Friendship Monument nearby (Soviet-era mosaic viewing platform). Big descent north to Stepantsminda begins here.</desc>
+    <type>pass</type>
+  </wpt>
+
+  <!-- Stepantsminda / Kazbegi area -->
+  <wpt lat="42.6594" lon="44.6433">
+    <ele>1740</ele>
+    <name>Stepantsminda (Kazbegi)</name>
+    <desc>Base for 3-4 days. Guesthouses, restaurants, ATM, small grocery shops. Mountain Freaks office for local logistics (Juta minibus, trail info). Buy a Georgian SIM card in Tbilisi before arriving — signal drops quickly on trails. Mt Kazbek (5,047m) dominates the skyline.</desc>
+    <type>base</type>
+  </wpt>
+
+  <wpt lat="42.6628" lon="44.6200">
+    <ele>2170</ele>
+    <name>Gergeti Trinity Church</name>
+    <desc>14th-century church at 2,170m. Ride up on the 4x4 track — steep, loose, ~6km from town with 430m elevation gain. Views of Kazbek. Best in early morning light before clouds build. Good shakedown ride on day 1.</desc>
+    <type>poi</type>
+  </wpt>
+
+  <!-- Truso Valley -->
+  <wpt lat="42.6200" lon="44.5500">
+    <ele>1900</ele>
+    <name>Truso Valley Trailhead</name>
+    <desc>Start of Truso Valley road. Turn off main highway ~7km south of Stepantsminda at Kobi area. Dirt road follows the Terek gorge upstream.</desc>
+    <type>trailhead</type>
+  </wpt>
+
+  <wpt lat="42.5900" lon="44.4600">
+    <ele>2400</ele>
+    <name>Truso Valley - Travertine Terraces</name>
+    <desc>Mineral spring deposits creating colourful travertine formations. Abandoned village of Ketrisi nearby. Sulphur springs. EXCELLENT for photography and drawing — the geology here is unique. Turquoise/orange mineral pools against alpine backdrop. Out-and-back from Stepantsminda, ~25km each way on dirt road.</desc>
+    <type>highlight</type>
+  </wpt>
+
+  <!-- Juta Valley -->
+  <wpt lat="42.5700" lon="44.5850">
+    <ele>1600</ele>
+    <name>Sno Valley Turnoff (Achkoti)</name>
+    <desc>Turn off Georgian Military Highway 4km south of Stepantsminda. Unpaved road to Juta begins here, 15km.</desc>
+    <type>navigation</type>
+  </wpt>
+
+  <wpt lat="42.5630" lon="44.5730">
+    <ele>1700</ele>
+    <name>Sno Village</name>
+    <desc>Small village with fortress ruins and massive stone heads sculpture. On the road to Juta. Guesthouse options.</desc>
+    <type>poi</type>
+  </wpt>
+
+  <wpt lat="42.5800" lon="44.6300">
+    <ele>2200</ele>
+    <name>Juta Village</name>
+    <desc>Tiny mountain village at the foot of the Chaukhi Massif ("Dolomites of Georgia"). Several guesthouses (MetiTsa recommended). Zeta Camping and Fifth Season hut further up the valley. From here, ride/hike up the valley toward Chaukhi — even if the pass is closed, the approach is spectacular. Massive limestone towers.</desc>
+    <type>base</type>
+  </wpt>
+
+  <wpt lat="42.5650" lon="44.6100">
+    <ele>3340</ele>
+    <name>Chaukhi Pass</name>
+    <desc>⚠️ 3,340m. LIKELY CLOSED IN LATE MAY — snow, loose scree descent. Usually opens second half of June. Do NOT attempt without local confirmation from Mountain Freaks in Stepantsminda. If open: hike-a-bike over to Abudelauri Lakes (rideable from the lakes down to Roshka). If closed: enjoy the approach hike and return to Juta.</desc>
+    <type>pass</type>
+  </wpt>
+
+  <!-- Khevsureti / Shatili -->
+  <wpt lat="42.4500" lon="44.5200">
+    <ele>1300</ele>
+    <name>Barisakho</name>
+    <desc>Junction village on the Tbilisi-Shatili road. Marshrutka connections. From here the road to Shatili heads northeast up the Argun gorge — increasingly rough and spectacular. Stock up on food: no shops between here and Shatili (~70km).</desc>
+    <type>resupply</type>
+  </wpt>
+
+  <wpt lat="42.5700" lon="44.9900">
+    <ele>1400</ele>
+    <name>Shatili</name>
+    <desc>Medieval fortified village — stacked stone towers forming a defensive complex. One of Georgia's most extraordinary sights. Nina Chincharauli's guesthouse (camp in garden, she cooks). The Crypts of Anatori are a short ride away — medieval communal tomb with skulls and bones. Register at the army checkpoint if continuing toward Atsunta trail areas.</desc>
+    <type>highlight</type>
+  </wpt>
+
+  <wpt lat="42.5900" lon="45.0200">
+    <ele>1600</ele>
+    <name>Anatori Crypts</name>
+    <desc>Medieval communal tomb — stone structures piled with human skulls and bones. Eerie and fascinating. Short ride from Shatili on dirt track. Historically used during plague outbreaks — the sick would go there to die in isolation.</desc>
+    <type>poi</type>
+  </wpt>
+
+  <!-- Tusheti via Abano Pass -->
+  <wpt lat="42.3900" lon="45.0800">
+    <ele>700</ele>
+    <name>Alvani</name>
+    <desc>Town in the Alazani Valley. Starting point for the Abano Pass road to Tusheti. Check here whether the pass road is open — ask at guesthouses or the local tourism info. If closed, you cannot reach Tusheti by road. Small shops for resupply. The road from Barisakho to Alvani goes via Zhinvali — or you can arrange a transfer from Shatili back south.</desc>
+    <type>resupply</type>
+  </wpt>
+
+  <wpt lat="42.3800" lon="45.2000">
+    <ele>2826</ele>
+    <name>Abano Pass</name>
+    <desc>2,826m. Famous as one of the most dangerous roads in the world — hairpin switchbacks with no guardrails, vertical drops. Spectacular on a bike. The road is gravel/dirt, rough but rideable. Usually opens late May/early June — snowmelt dependent. The road climbs ~2,100m from the valley floor. Allow a full day for the ascent. Water from streams on the way up.</desc>
+    <type>pass</type>
+  </wpt>
+
+  <wpt lat="42.3800" lon="45.3700">
+    <ele>1900</ele>
+    <name>Omalo (Tusheti)</name>
+    <desc>Main settlement in Tusheti. Watchtowers, guesthouses, tourist info. Hostel Tishe (Eteri) recommended for food and has a shop. Tusheti is one of Europe's most remote inhabited regions — only accessible ~June-October. The stone watchtower villages (Dartlo, Diklo, Shenako) are extraordinary. ⚠️ Tushetian sheepdogs are genuinely dangerous — give herds 100m+ berth. Don't run. Walk slowly past.</desc>
+    <type>highlight</type>
+  </wpt>
+
+  <wpt lat="42.4100" lon="45.4100">
+    <ele>1850</ele>
+    <name>Dartlo</name>
+    <desc>Beautiful stone watchtower village, 15km from Omalo on dirt road. Some of the best-preserved medieval towers in Tusheti. Guesthouses available. Good day ride from Omalo.</desc>
+    <type>poi</type>
+  </wpt>
+
+  <!-- ===== ROUTE SEGMENTS (simplified track points) ===== -->
+
+  <!-- Segment 1: Tbilisi to Stepantsminda via Georgian Military Highway -->
+  <rte>
+    <name>Seg 1: Tbilisi to Stepantsminda</name>
+    <desc>155km on Georgian Military Highway (paved). Heavy truck traffic in lower sections. Consider marshrutka to Gudauri and riding the scenic upper section only (35km, all downhill from Jvari Pass). If riding the whole thing: 2 days, camp near Ananuri or Gudauri.</desc>
+    <rtept lat="41.7151" lon="44.8271"><ele>450</ele><name>Tbilisi</name></rtept>
+    <rtept lat="42.1647" lon="44.7017"><ele>880</ele><name>Ananuri</name></rtept>
+    <rtept lat="42.3200" lon="44.5800"><ele>1600</ele><name>Zhinvali</name></rtept>
+    <rtept lat="42.4614" lon="44.4747"><ele>2200</ele><name>Gudauri</name></rtept>
+    <rtept lat="42.5033" lon="44.4581"><ele>2379</ele><name>Jvari Pass</name></rtept>
+    <rtept lat="42.6594" lon="44.6433"><ele>1740</ele><name>Stepantsminda</name></rtept>
+  </rte>
+
+  <!-- Segment 2: Truso Valley out-and-back -->
+  <rte>
+    <name>Seg 2: Truso Valley (out-and-back)</name>
+    <desc>~50km round trip on dirt road from near Stepantsminda. Follows the Terek River upstream through a dramatic gorge to travertine terraces and mineral springs. Mostly rideable, some rough sections. 1 long day or overnight camp at the terraces.</desc>
+    <rtept lat="42.6200" lon="44.5500"><ele>1900</ele><name>Truso Trailhead</name></rtept>
+    <rtept lat="42.6100" lon="44.5100"><ele>2100</ele><name>Ketrisi ruins</name></rtept>
+    <rtept lat="42.5900" lon="44.4600"><ele>2400</ele><name>Travertine Terraces</name></rtept>
+  </rte>
+
+  <!-- Segment 3: Juta Valley -->
+  <rte>
+    <name>Seg 3: Juta Valley exploration</name>
+    <desc>~30km round trip from Stepantsminda. Unpaved road through Sno Valley to Juta (15km). From Juta, ride/hike up toward Chaukhi Massif. If Chaukhi Pass is open (unlikely in May), cross to Abudelauri Lakes and descend to Roshka. If closed, enjoy the approach and return.</desc>
+    <rtept lat="42.5700" lon="44.5850"><ele>1600</ele><name>Sno turnoff</name></rtept>
+    <rtept lat="42.5630" lon="44.5730"><ele>1700</ele><name>Sno village</name></rtept>
+    <rtept lat="42.5800" lon="44.6300"><ele>2200</ele><name>Juta</name></rtept>
+    <rtept lat="42.5720" lon="44.6200"><ele>2600</ele><name>Chaukhi approach</name></rtept>
+  </rte>
+
+  <!-- Segment 4: Stepantsminda to Shatili via road -->
+  <rte>
+    <name>Seg 4: Stepantsminda to Shatili (road)</name>
+    <desc>~160km over 2 days. South on Military Highway to near Zhinvali, east through Barisakho, then northeast up the Argun gorge to Shatili. The Barisakho-Shatili section is rough dirt/gravel 4x4 road through a spectacular gorge. Stock up in Barisakho — no shops for 70km. Camp in the gorge or push through to Shatili.</desc>
+    <rtept lat="42.6594" lon="44.6433"><ele>1740</ele><name>Stepantsminda</name></rtept>
+    <rtept lat="42.5033" lon="44.4581"><ele>2379</ele><name>Jvari Pass</name></rtept>
+    <rtept lat="42.3200" lon="44.5800"><ele>1600</ele><name>Zhinvali area</name></rtept>
+    <rtept lat="42.4500" lon="44.5200"><ele>1300</ele><name>Barisakho</name></rtept>
+    <rtept lat="42.5100" lon="44.7100"><ele>1200</ele><name>Argun Gorge mid</name></rtept>
+    <rtept lat="42.5700" lon="44.9900"><ele>1400</ele><name>Shatili</name></rtept>
+  </rte>
+
+  <!-- Segment 5: Shatili to Tusheti via Abano Pass -->
+  <rte>
+    <name>Seg 5: Shatili to Tusheti via Abano Pass</name>
+    <desc>Shatili back to Alvani (~transfer or ride via Barisakho/Zhinvali), then up Abano Pass road to Omalo. The Abano Pass road is ~70km with 2,100m climbing — allow a full day. CONFIRM PASS IS OPEN before committing. If closed: skip Tusheti, extend Khevsureti exploration or head to Turkey early.</desc>
+    <rtept lat="42.5700" lon="44.9900"><ele>1400</ele><name>Shatili</name></rtept>
+    <rtept lat="42.3900" lon="45.0800"><ele>700</ele><name>Alvani</name></rtept>
+    <rtept lat="42.3850" lon="45.1400"><ele>1500</ele><name>Abano road mid</name></rtept>
+    <rtept lat="42.3800" lon="45.2000"><ele>2826</ele><name>Abano Pass</name></rtept>
+    <rtept lat="42.3800" lon="45.3700"><ele>1900</ele><name>Omalo</name></rtept>
+  </rte>
+
+  <!-- Segment 6: Tusheti exploration -->
+  <rte>
+    <name>Seg 6: Tusheti exploration</name>
+    <desc>Day rides from Omalo to watchtower villages. Dirt roads, mostly rideable. Dartlo is the highlight — 15km each way on a good dirt road along the valley.</desc>
+    <rtept lat="42.3800" lon="45.3700"><ele>1900</ele><name>Omalo</name></rtept>
+    <rtept lat="42.4100" lon="45.4100"><ele>1850</ele><name>Dartlo</name></rtept>
+  </rte>
+
+</gpx>

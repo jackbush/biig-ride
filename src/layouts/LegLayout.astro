@@ -1,0 +1,64 @@
+---
+import Layout from './Layout.astro';
+import LegMap from '../components/LegMap.astro';
+
+const { frontmatter } = Astro.props;
+const { leg, title, dates, duration, distance, schengen, center, zoom, gpxFiles = [] } = frontmatter;
+
+const base = import.meta.env.BASE_URL;
+const prevHref = leg > 1 ? `${base}/legs/${leg - 1}` : null;
+const nextHref = leg < 10 ? `${base}/legs/${leg + 1}` : null;
+
+// Strip "Leg N · " prefix for the h1 (it's shown separately as the pill)
+const headingTitle = title.replace(/^Leg \d+ · /, '');
+---
+
+<Layout title={title} current="legs">
+  <LegMap
+    legNumber={leg}
+    gpxFiles={gpxFiles}
+    center={center}
+    zoom={zoom}
+  />
+
+  <div class="leg-header">
+    <span class="leg-pill">Leg {leg}</span>
+    <h1>{headingTitle}</h1>
+    <div class="leg-meta-strip">
+      {dates && <span>{dates}</span>}
+      {duration && <span>{duration}</span>}
+      {distance && <span>{distance}</span>}
+      <span class={`tag ${schengen ? 'tag-schengen' : 'tag-free'}`}>
+        {schengen ? 'Schengen' : 'Non-Schengen'}
+      </span>
+    </div>
+  </div>
+
+  <nav class="leg-nav" aria-label="Leg navigation">
+    {prevHref
+      ? <a href={prevHref} class="leg-nav-link">← Leg {leg - 1}</a>
+      : <span></span>
+    }
+    <a href={base} class="leg-nav-link leg-nav-all">All legs</a>
+    {nextHref
+      ? <a href={nextHref} class="leg-nav-link">Leg {leg + 1} →</a>
+      : <span></span>
+    }
+  </nav>
+
+  <div class="prose">
+    <slot />
+  </div>
+
+  <nav class="leg-nav leg-nav-bottom" aria-label="Leg navigation">
+    {prevHref
+      ? <a href={prevHref} class="leg-nav-link">← Leg {leg - 1}</a>
+      : <span></span>
+    }
+    <a href={base} class="leg-nav-link leg-nav-all">All legs</a>
+    {nextHref
+      ? <a href={nextHref} class="leg-nav-link">Leg {leg + 1} →</a>
+      : <span></span>
+    }
+  </nav>
+</Layout>

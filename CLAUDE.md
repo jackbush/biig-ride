@@ -30,8 +30,11 @@ Planning website for a 5-month solo bikepacking tour across Europe (May–Octobe
 4. **Albania** (2 weeks, Jul 15 – Aug 1) — Accursed Mountains, Theth, Valbona, Lake Koman
 5. **Montenegro** (10 days, Aug 1-12) — Durmitor, Tara Canyon, ferry Bar → Bari
 6. **Italy Apennines** (12 days, Aug 13-25) — Wolf's Lair loop (bikepacking.com) from L'Aquila, train to Turin
-7. **Alps Loop** (45 days, Aug 26 – Oct 10) — Turin → Veneto → Trans-Dolomiti → Austria → Swiss Alps → French Alps → TNR off-road sections → Nice
-8. **Optional France extension** — If bilateral confirmed, keep riding on the extra 90 days
+7. **Alps — Piedmont Approach** (4-5 days, Aug 26-30) — Turin east across Po Plain into Venetian Prealps
+8. **Alps — Dolomites** (10-14 days, Aug 31 – Sep 13) — Trans-Dolomiti loop + Zillertal Trail option
+9. **Alps — Austria & Switzerland** (10-14 days, Sep 14-28) — Stelvio → Engadin → Swiss Alpine Bike Route 1
+10. **Alps — French Alps & Nice** (10-14 days, Sep 29 – Oct 10) — Queyras → Mercantour → TNR off-road sections → Nice
+11. **Optional France extension** — If bilateral confirmed, keep riding on the extra 90 days
 
 ### Key route inspirations / GPX sources
 - Caucasus Crossing (bikepacking.com) — used for Georgia sections
@@ -50,30 +53,36 @@ Planning website for a 5-month solo bikepacking tour across Europe (May–Octobe
 - Sleep: Big Agnes Fly Creek 1 (2018), Cumulus 350 quilt, R~3 mat, merinos, hooded down jacket
 
 ### Design decisions
-- Dark, warm editorial aesthetic. Fraunces (serif display) + DM Sans (body).
-- Warm charcoal background (#1a1816), cream text (#e8e0d4), amber accent (#c47d2e).
+- Neutral dark aesthetic. DM Sans throughout (no display serif).
+- Neutral charcoal background (#161616), near-white text (#e2e2e2), punchy amber accent (#e8820c).
 - Content-focused, minimal decoration. Tables styled for readability.
-- Sticky nav. Four pages: Overview, Route, Actions, Gear.
+- Sticky nav with Legs dropdown. Four nav items: Overview, Legs ▾, Actions, Gear.
+- Overview (homepage) shows all 10 leg cards with links, Schengen budget, budget table, GPX sources.
 - Actions page has localStorage-persisted checkboxes.
-- Route page is MDX rendering the full detailed plan.
+- Each leg has its own page at /legs/N with a Leaflet map (dark CartoDB tiles) and full detail.
+- GPX files go in public/gpx/leg-N/ and are listed in each leg page's gpxFiles frontmatter.
 
 ## File Structure
 ```
 src/
+  components/
+    LegMap.astro          — Leaflet map component (CDN load, GPX support)
   layouts/
-    Layout.astro          — Base layout with nav
-    RouteLayout.astro     — Wraps MDX content in prose class
+    Layout.astro          — Base layout with nav + Legs dropdown
+    LegLayout.astro       — Leg pages: map + header + prev/next nav + prose
   pages/
-    index.astro           — Overview/homepage
-    route.mdx             — Full detailed route plan (long)
+    index.astro           — Homepage: leg cards, Schengen budget, budget, GPX sources
     actions.astro         — Checklist with localStorage persistence
     gear.astro            — Gear list and shopping
+    legs/
+      1.mdx – 10.mdx      — Individual leg pages
   styles/
     global.css            — All styles, CSS custom properties
+public/
+  gpx/
+    leg-1/ … leg-10/      — Drop GPX files here; list in leg frontmatter
 ```
 
 ## Future work
-- GPX file generation for each leg (planning to do leg by leg)
-- Interactive map showing the full route
 - Country-specific info cards (visa rules, currency, emergency numbers)
 - Photo/drawing journal integration once on the road

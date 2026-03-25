@@ -25,33 +25,57 @@ const base = import.meta.env.BASE_URL;
             <div class="nav-inner">
                 <a href={base} class="nav-title">Georgia → Nice</a>
                 <ul class="nav-links">
-                    <li>
+                    <li class="nav-has-dropdown">
                         <a
-                            href={base}
-                            aria-current={current === "home"
+                            href={`${base}/legs/1`}
+                            aria-current={current === "legs"
                                 ? "page"
-                                : undefined}>Overview</a>
-                    </li>
-                    <li>
-                        <a
-                            href={`${base}/route`}
-                            aria-current={current === "route"
-                                ? "page"
-                                : undefined}>Route</a>
+                                : undefined}>Legs</a
+                        >
+                        <ul class="nav-dropdown-menu">
+                            <li><a href={`${base}/legs/1`}>1 · Georgia</a></li>
+                            <li><a href={`${base}/legs/2`}>2 · Turkey</a></li>
+                            <li><a href={`${base}/legs/3`}>3 · Greece</a></li>
+                            <li><a href={`${base}/legs/4`}>4 · Albania</a></li>
+                            <li>
+                                <a href={`${base}/legs/5`}>5 · Montenegro</a>
+                            </li>
+                            <li>
+                                <a href={`${base}/legs/6`}>6 · Apennines</a>
+                            </li>
+                            <li>
+                                <a href={`${base}/legs/7`}
+                                    >7 · Alps — Piedmont</a>
+                            </li>
+                            <li>
+                                <a href={`${base}/legs/8`}
+                                    >8 · Alps — Dolomites</a>
+                            </li>
+                            <li>
+                                <a href={`${base}/legs/9`}
+                                    >9 · Alps — Austria & Switzerland</a>
+                            </li>
+                            <li>
+                                <a href={`${base}/legs/10`}
+                                    >10 · Alps — France & Nice</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a
                             href={`${base}/actions`}
                             aria-current={current === "actions"
                                 ? "page"
-                                : undefined}>Actions</a>
+                                : undefined}>Actions</a
+                        >
                     </li>
                     <li>
                         <a
                             href={`${base}/gear`}
                             aria-current={current === "gear"
                                 ? "page"
-                                : undefined}>Gear</a>
+                                : undefined}>Gear</a
+                        >
                     </li>
                 </ul>
             </div>
