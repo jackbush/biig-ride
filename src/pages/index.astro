@@ -1,0 +1,160 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Overview" current="home">
+  <div class="page-header">
+    <h1>Europe Bikepacking Tour 2026</h1>
+    <p class="subtitle">
+      Georgia through Turkey, the Balkans, and a counterclockwise lap of the Alps. 
+      Hardtail, bikepacking bags, dirt roads and singletrack. Mid-May to late October.
+    </p>
+    <div class="meta">
+      <span><span class="dot"></span> ~5,500 km</span>
+      <span><span class="dot"></span> ~145 days</span>
+      <span><span class="dot"></span> ~€4,500</span>
+      <span><span class="dot"></span> 9 countries</span>
+    </div>
+  </div>
+
+  <h2>Route at a Glance</h2>
+
+  <div class="leg-card">
+    <h3>Leg 1 · Georgia — Caucasus Highlights</h3>
+    <div class="leg-meta">
+      <span>~2 weeks</span>
+      <span>May 18 – Jun 1</span>
+      <span>~500 km</span>
+      <span class="tag tag-free">Non-Schengen</span>
+    </div>
+    <p>Tbilisi → Kazbegi → Truso Valley → Juta/Chaukhi Pass → Shatili → Tusheti (Omalo). 
+    Alpine meadows, stone watchtowers, hike-a-bike over 3,300m passes. The warmup.</p>
+  </div>
+
+  <div class="leg-card">
+    <h3>Leg 2 · Turkey — Kaçkars & Cappadocia</h3>
+    <div class="leg-meta">
+      <span>~5 weeks</span>
+      <span>Jun 1 – Jul 10</span>
+      <span>~1,000 km riding + trains</span>
+      <span class="tag tag-free">Non-Schengen</span>
+    </div>
+    <p>Kaçkar Mountains via yayla roads → train across Anatolia → Cappadocia Delight loop (bikepacking.com) → 
+    western Turkey → Thrace → Greek border. Volcanic geology, fairy chimneys, tea plantations.</p>
+  </div>
+
+  <div class="leg-card">
+    <h3>Leg 3 · Greece Transit</h3>
+    <div class="leg-meta">
+      <span>3 days</span>
+      <span>Jul 12 – 15</span>
+      <span>~350 km</span>
+      <span class="tag tag-schengen">3 Schengen days</span>
+    </div>
+    <p>Speed run through Thrace to the Albanian border. Flat, fast, functional. Every day costs a Schengen day.</p>
+  </div>
+
+  <div class="leg-card">
+    <h3>Leg 4 · Albania — Accursed Mountains</h3>
+    <div class="leg-meta">
+      <span>~2 weeks</span>
+      <span>Jul 15 – Aug 1</span>
+      <span>~500 km</span>
+      <span class="tag tag-free">Non-Schengen</span>
+    </div>
+    <p>Shkodër → Theth → Valbona Pass → Lake Koman ferry → northern highlands. 
+    Karst limestone peaks, turquoise rivers, cheapest country on the route.</p>
+  </div>
+
+  <div class="leg-card">
+    <h3>Leg 5 · Montenegro — Durmitor</h3>
+    <div class="leg-meta">
+      <span>~10 days</span>
+      <span>Aug 1 – 12</span>
+      <span>~400 km</span>
+      <span class="tag tag-free">Non-Schengen</span>
+    </div>
+    <p>Prokletije → Durmitor National Park → Tara River Canyon → coast at Bar. 
+    Deepest canyon in Europe, old-growth forests. Ferry to Italy.</p>
+  </div>
+
+  <div class="leg-card">
+    <h3>Leg 6 · Apennine Highlights</h3>
+    <div class="leg-meta">
+      <span>~12 days</span>
+      <span>Aug 13 – 25</span>
+      <span>~400 km riding + trains</span>
+      <span class="tag tag-schengen">Schengen</span>
+    </div>
+    <p>Train Bari → L'Aquila. The Wolf's Lair loop (bikepacking.com) through Gran Sasso, 
+    Maiella, and Abruzzo national parks. Campo Imperatore plateau. Train to Turin.</p>
+  </div>
+
+  <div class="leg-card">
+    <h3>Leg 7 · The Alps — Counterclockwise Loop</h3>
+    <div class="leg-meta">
+      <span>~45 days</span>
+      <span>Aug 26 – Oct 10</span>
+      <span>~2,500 km</span>
+      <span class="tag tag-schengen">Schengen</span>
+    </div>
+    <p>Turin → Veneto → Trans-Dolomiti → Zillertal → Austrian Alps → Swiss Alps (Route 1) → 
+    French Alps → TNR off-road sections (Assietta, Little Peru, Via del Sale) → Nice. 
+    The centrepiece.</p>
+  </div>
+
+  <h2>Schengen Budget</h2>
+
+  <div class="callout callout-warning">
+    <div class="callout-title">NZ Bilateral with France</div>
+    <p>NZ passport holders may get 90 additional days in France after Schengen days are used, 
+    per a 1947 bilateral agreement. Awaiting embassy confirmation. 
+    Clear departure point: Nice. If bilateral works → keep riding in France. If not → fly to NZ.</p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>If entering Schengen on…</th>
+        <th>Old France days in window</th>
+        <th>Greece transit</th>
+        <th>Total used</th>
+        <th>Days available</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Aug 1</td><td>64</td><td>3</td><td>67</td><td><strong>23</strong></td></tr>
+      <tr><td>Sep 1</td><td>33</td><td>3</td><td>36</td><td><strong>54</strong></td></tr>
+      <tr><td>Sep 15</td><td>19</td><td>3</td><td>22</td><td><strong>68</strong></td></tr>
+      <tr><td>Oct 1</td><td>3</td><td>3</td><td>6</td><td><strong>84</strong></td></tr>
+      <tr><td>Oct 4+</td><td>0</td><td>3</td><td>3</td><td><strong>87</strong></td></tr>
+    </tbody>
+  </table>
+  <p style="font-size: 0.85rem; color: var(--text-muted);">
+    Based on France stay Jan 17 – Apr 7 (81 days). Enter Italy ~Sep 5 with ~55 days → Alps loop needs ~45. Comfortable.
+  </p>
+
+  <h2>Budget</h2>
+
+  <table>
+    <thead>
+      <tr><th>Country</th><th>€/day</th><th>Days</th><th>Total</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Georgia</td><td>12</td><td>14</td><td>€170</td></tr>
+      <tr><td>Turkey</td><td>12</td><td>40</td><td>€480</td></tr>
+      <tr><td>Greece</td><td>22</td><td>3</td><td>€65</td></tr>
+      <tr><td>Albania</td><td>12</td><td>17</td><td>€200</td></tr>
+      <tr><td>Montenegro</td><td>18</td><td>12</td><td>€215</td></tr>
+      <tr><td>Italy</td><td>24</td><td>26</td><td>€615</td></tr>
+      <tr><td>Austria</td><td>25</td><td>7</td><td>€175</td></tr>
+      <tr><td>Switzerland</td><td>35</td><td>12</td><td>€420</td></tr>
+      <tr><td>France</td><td>22</td><td>14</td><td>€310</td></tr>
+      <tr><td colspan="3"><strong>Living subtotal</strong></td><td><strong>€2,650</strong></td></tr>
+      <tr><td colspan="3">Flights, trains, ferries</td><td>€1,550</td></tr>
+      <tr><td colspan="3">Bike maintenance & spares</td><td>€250</td></tr>
+      <tr><td colspan="3"><strong>Grand total</strong></td><td><strong>~€4,450</strong></td></tr>
+    </tbody>
+  </table>
+
+</Layout>
