@@ -1,6 +1,8 @@
-import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
+import { defineConfig } from "astro/config";
+import mdx from "@astrojs/mdx";
 
 export default defineConfig({
+  site: "https://jackbush.github.io",
+  base: "/biig-ride",
   integrations: [mdx()],
 });
