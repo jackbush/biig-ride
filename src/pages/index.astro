@@ -1,177 +1,255 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Overview" current="home">
-  <div class="page-header">
-    <h1>Europe Bikepacking Tour 2026</h1>
-    <p class="subtitle">
-      Georgia through Turkey, the Balkans, and a counterclockwise lap of the Alps.
-      Hardtail, bikepacking bags, dirt roads and singletrack. Mid-May to late October.
+    <div class="page-header">
+        <h1>Europe Bikepacking Tour 2026</h1>
+        <p class="subtitle">
+            Georgia through Turkey, the Balkans, and a counterclockwise lap of
+            the Alps. Hardtail, bikepacking bags, dirt roads and singletrack.
+            Mid-May to late October.
+        </p>
+        <div class="meta">
+            <span><span class="dot"></span> ~5,500 km</span>
+            <span><span class="dot"></span> ~145 days</span>
+            <span><span class="dot"></span> ~€4,500</span>
+            <span><span class="dot"></span> 9 countries</span>
+        </div>
+    </div>
+
+    <h2>The Route</h2>
+
+    <div class="leg-card">
+        <h3>
+            <a href={`${base}/legs/1`}>Leg 1 · Georgia — Caucasus Highlights</a>
+        </h3>
+        <div class="leg-meta">
+            <span>~2 weeks</span><span>May 18 – Jun 1</span><span>~500 km</span>
+            <span class="tag tag-free">Non-Schengen</span>
+        </div>
+        <p>
+            Tbilisi → Kazbegi → Truso Valley (travertine geology) → Juta Valley
+            (Chaukhi Massif) → Shatili (medieval fortress) → Abano Pass →
+            Tusheti (Omalo). Stone watchtowers, mineral springs, gorge riding.
+            Chaukhi Pass closed in May — route adapted.
+        </p>
+    </div>
+
+    <div class="leg-card">
+        <h3>
+            <a href={`${base}/legs/2`}>Leg 2 · Turkey — Kaçkars & Cappadocia</a>
+        </h3>
+        <div class="leg-meta">
+            <span>~5 weeks</span><span>Jun 1 – Jul 10</span><span
+                >~1,000 km + trains</span
+            >
+            <span class="tag tag-free">Non-Schengen</span>
+        </div>
+        <p>
+            Kaçkar Mountains via yayla roads → train across Anatolia →
+            Cappadocia Delight loop → western Turkey → Thrace → Greek border.
+            Volcanic geology, fairy chimneys, tea plantations.
+        </p>
+    </div>
+
+    <div class="leg-card">
+        <h3><a href={`${base}/legs/3`}>Leg 3 · Greece Transit</a></h3>
+        <div class="leg-meta">
+            <span>3 days</span><span>Jul 12–15</span><span>~350 km</span>
+            <span class="tag tag-schengen">3 Schengen days</span>
+        </div>
+        <p>
+            Speed run through Thrace to the Albanian border. Flat, fast,
+            functional. Every day costs a Schengen day.
+        </p>
+    </div>
+
+    <div class="leg-card">
+        <h3>
+            <a href={`${base}/legs/4`}>Leg 4 · Albania — Accursed Mountains</a>
+        </h3>
+        <div class="leg-meta">
+            <span>~2 weeks</span><span>Jul 15 – Aug 1</span><span>~500 km</span>
+            <span class="tag tag-free">Non-Schengen</span>
+        </div>
+        <p>
+            Shkodër → Theth → Valbona Pass → Lake Koman ferry → northern
+            highlands. Karst limestone peaks, turquoise rivers, cheapest country
+            on the route.
+        </p>
+    </div>
+
+    <div class="leg-card">
+        <h3><a href={`${base}/legs/5`}>Leg 5 · Montenegro — Durmitor</a></h3>
+        <div class="leg-meta">
+            <span>~10 days</span><span>Aug 1–12</span><span>~400 km</span>
+            <span class="tag tag-free">Non-Schengen</span>
+        </div>
+        <p>
+            Prokletije → Durmitor National Park → Tara River Canyon → coast at
+            Bar. Deepest canyon in Europe, old-growth forests. Ferry to Bari.
+        </p>
+    </div>
+
+    <div class="leg-card">
+        <h3><a href={`${base}/legs/6`}>Leg 6 · Apennine Highlights</a></h3>
+        <div class="leg-meta">
+            <span>~12 days</span><span>Aug 13–25</span><span
+                >~400 km + trains</span
+            >
+            <span class="tag tag-schengen">Schengen</span>
+        </div>
+        <p>
+            Train Bari → L'Aquila. The Wolf's Lair loop through Gran Sasso,
+            Maiella, and Abruzzo national parks. Campo Imperatore plateau. Train
+            to Turin.
+        </p>
+    </div>
+
+    <div class="leg-card">
+        <h3><a href={`${base}/legs/7`}>Leg 7 · Alps — Piedmont Approach</a></h3>
+        <div class="leg-meta">
+            <span>4–5 days</span><span>Aug 26–30</span><span>~200 km</span>
+            <span class="tag tag-schengen">Schengen</span>
+        </div>
+        <p>
+            Turin east across the Po Plain, cutting into the Venetian Prealps.
+            Transition leg — service the bike, rest, arrive at the Dolomites
+            fresh.
+        </p>
+    </div>
+
+    <div class="leg-card">
+        <h3><a href={`${base}/legs/8`}>Leg 8 · Alps — Dolomites</a></h3>
+        <div class="leg-meta">
+            <span>~10–14 days</span><span>Aug 31 – Sep 13</span><span
+                >~500 km</span
+            >
+            <span class="tag tag-schengen">Schengen</span>
+        </div>
+        <p>
+            Trans-Dolomiti loop from Brixen — WWI military roads, limestone
+            towers, enrosadira. Zillertal Trail add-on if conditions allow.
+        </p>
+    </div>
+
+    <div class="leg-card">
+        <h3>
+            <a href={`${base}/legs/9`}>Leg 9 · Alps — Austria & Switzerland</a>
+        </h3>
+        <div class="leg-meta">
+            <span>~10–14 days</span><span>Sep 14–28</span><span>~600 km</span>
+            <span class="tag tag-schengen">Schengen</span>
+        </div>
+        <p>
+            Stelvio → Inn Valley → Engadin. Swiss Alpine Bike Route 1 heading
+            west. Glacier views, ancient trading passes, impeccable
+            infrastructure at Swiss prices.
+        </p>
+    </div>
+
+    <div class="leg-card">
+        <h3>
+            <a href={`${base}/legs/10`}>Leg 10 · Alps — French Alps & Nice</a>
+        </h3>
+        <div class="leg-meta">
+            <span>~10–14 days</span><span>Sep 29 – Oct 10</span><span
+                >~400 km</span
+            >
+            <span class="tag tag-schengen">Schengen</span>
+        </div>
+        <p>
+            Queyras → Mercantour → TNR off-road sections (Assietta, Little Peru,
+            Via del Sale) → Nice. The sections worth redoing properly. Decision
+            point at Nice.
+        </p>
+    </div>
+
+    <h2>Schengen Budget</h2>
+
+    <div class="callout callout-warning">
+        <div class="callout-title">NZ Bilateral with France</div>
+        <p>
+            NZ passport holders may get 90 additional days in France after
+            Schengen days are used, per a 1947 bilateral agreement. Awaiting
+            embassy confirmation. Clear departure point: Nice. If bilateral
+            works → keep riding in France. If not → fly to NZ.
+        </p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th>Schengen days used</th>
+                <th>Running total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>France (Jan 16 – Apr 7)</td><td>82</td><td>82</td></tr>
+            <tr><td>Denmark (May 8 - May 10)</td><td>3</td><td>85</td></tr>
+            <tr><td>Greece transit (~Jul 15–18)</td><td>3</td><td>88</td></tr>
+            <tr
+                ><td><em>Gap: Jul 18 – Sep 5 (non-Schengen)</em></td><td>—</td
+                ><td>—</td></tr
+            >
+            <tr
+                ><td>Italy entry ~Sep 5</td><td>Available: ~55 days</td><td
+                    >—</td
+                ></tr
+            >
+            <tr
+                ><td>Alps loop (Sep 5 – ~Oct 20)</td><td>~45</td><td
+                    >45 in current window</td
+                ></tr
+            >
+            <tr
+                ><td><strong>Buffer remaining</strong></td><td
+                    ><strong>~5 days</strong></td
+                ><td>—</td></tr
+            >
+        </tbody>
+    </table>
+    <p style="font-size: 0.85rem; color: var(--text-muted);">
+        By Oct 4, all France days fall outside the 180-day window → nearly full
+        90-day reset. Loop is comfortable.
     </p>
-    <div class="meta">
-      <span><span class="dot"></span> ~5,500 km</span>
-      <span><span class="dot"></span> ~145 days</span>
-      <span><span class="dot"></span> ~€4,500</span>
-      <span><span class="dot"></span> 9 countries</span>
-    </div>
-  </div>
 
-  <h2>The Route</h2>
+    <h2>Budget</h2>
 
-  <div class="leg-card">
-    <h3><a href={`${base}/legs/1`}>Leg 1 · Georgia — Caucasus Highlights</a></h3>
-    <div class="leg-meta">
-      <span>~2 weeks</span><span>May 18 – Jun 1</span><span>~500 km</span>
-      <span class="tag tag-free">Non-Schengen</span>
-    </div>
-    <p>Tbilisi → Kazbegi → Truso Valley (travertine geology) → Juta Valley (Chaukhi Massif) →
-    Shatili (medieval fortress) → Abano Pass → Tusheti (Omalo).
-    Stone watchtowers, mineral springs, gorge riding. Chaukhi Pass closed in May — route adapted.</p>
-  </div>
-
-  <div class="leg-card">
-    <h3><a href={`${base}/legs/2`}>Leg 2 · Turkey — Kaçkars & Cappadocia</a></h3>
-    <div class="leg-meta">
-      <span>~5 weeks</span><span>Jun 1 – Jul 10</span><span>~1,000 km + trains</span>
-      <span class="tag tag-free">Non-Schengen</span>
-    </div>
-    <p>Kaçkar Mountains via yayla roads → train across Anatolia → Cappadocia Delight loop →
-    western Turkey → Thrace → Greek border. Volcanic geology, fairy chimneys, tea plantations.</p>
-  </div>
-
-  <div class="leg-card">
-    <h3><a href={`${base}/legs/3`}>Leg 3 · Greece Transit</a></h3>
-    <div class="leg-meta">
-      <span>3 days</span><span>Jul 12–15</span><span>~350 km</span>
-      <span class="tag tag-schengen">3 Schengen days</span>
-    </div>
-    <p>Speed run through Thrace to the Albanian border. Flat, fast, functional. Every day costs a Schengen day.</p>
-  </div>
-
-  <div class="leg-card">
-    <h3><a href={`${base}/legs/4`}>Leg 4 · Albania — Accursed Mountains</a></h3>
-    <div class="leg-meta">
-      <span>~2 weeks</span><span>Jul 15 – Aug 1</span><span>~500 km</span>
-      <span class="tag tag-free">Non-Schengen</span>
-    </div>
-    <p>Shkodër → Theth → Valbona Pass → Lake Koman ferry → northern highlands.
-    Karst limestone peaks, turquoise rivers, cheapest country on the route.</p>
-  </div>
-
-  <div class="leg-card">
-    <h3><a href={`${base}/legs/5`}>Leg 5 · Montenegro — Durmitor</a></h3>
-    <div class="leg-meta">
-      <span>~10 days</span><span>Aug 1–12</span><span>~400 km</span>
-      <span class="tag tag-free">Non-Schengen</span>
-    </div>
-    <p>Prokletije → Durmitor National Park → Tara River Canyon → coast at Bar.
-    Deepest canyon in Europe, old-growth forests. Ferry to Bari.</p>
-  </div>
-
-  <div class="leg-card">
-    <h3><a href={`${base}/legs/6`}>Leg 6 · Apennine Highlights</a></h3>
-    <div class="leg-meta">
-      <span>~12 days</span><span>Aug 13–25</span><span>~400 km + trains</span>
-      <span class="tag tag-schengen">Schengen</span>
-    </div>
-    <p>Train Bari → L'Aquila. The Wolf's Lair loop through Gran Sasso, Maiella, and Abruzzo
-    national parks. Campo Imperatore plateau. Train to Turin.</p>
-  </div>
-
-  <div class="leg-card">
-    <h3><a href={`${base}/legs/7`}>Leg 7 · Alps — Piedmont Approach</a></h3>
-    <div class="leg-meta">
-      <span>4–5 days</span><span>Aug 26–30</span><span>~200 km</span>
-      <span class="tag tag-schengen">Schengen</span>
-    </div>
-    <p>Turin east across the Po Plain, cutting into the Venetian Prealps. Transition leg —
-    service the bike, rest, arrive at the Dolomites fresh.</p>
-  </div>
-
-  <div class="leg-card">
-    <h3><a href={`${base}/legs/8`}>Leg 8 · Alps — Dolomites</a></h3>
-    <div class="leg-meta">
-      <span>~10–14 days</span><span>Aug 31 – Sep 13</span><span>~500 km</span>
-      <span class="tag tag-schengen">Schengen</span>
-    </div>
-    <p>Trans-Dolomiti loop from Brixen — WWI military roads, limestone towers, enrosadira.
-    Zillertal Trail add-on if conditions allow.</p>
-  </div>
-
-  <div class="leg-card">
-    <h3><a href={`${base}/legs/9`}>Leg 9 · Alps — Austria & Switzerland</a></h3>
-    <div class="leg-meta">
-      <span>~10–14 days</span><span>Sep 14–28</span><span>~600 km</span>
-      <span class="tag tag-schengen">Schengen</span>
-    </div>
-    <p>Stelvio → Inn Valley → Engadin. Swiss Alpine Bike Route 1 heading west.
-    Glacier views, ancient trading passes, impeccable infrastructure at Swiss prices.</p>
-  </div>
-
-  <div class="leg-card">
-    <h3><a href={`${base}/legs/10`}>Leg 10 · Alps — French Alps & Nice</a></h3>
-    <div class="leg-meta">
-      <span>~10–14 days</span><span>Sep 29 – Oct 10</span><span>~400 km</span>
-      <span class="tag tag-schengen">Schengen</span>
-    </div>
-    <p>Queyras → Mercantour → TNR off-road sections (Assietta, Little Peru, Via del Sale) → Nice.
-    The sections worth redoing properly. Decision point at Nice.</p>
-  </div>
-
-  <h2>Schengen Budget</h2>
-
-  <div class="callout callout-warning">
-    <div class="callout-title">NZ Bilateral with France</div>
-    <p>NZ passport holders may get 90 additional days in France after Schengen days are used,
-    per a 1947 bilateral agreement. Awaiting embassy confirmation.
-    Clear departure point: Nice. If bilateral works → keep riding in France. If not → fly to NZ.</p>
-  </div>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Action</th>
-        <th>Schengen days used</th>
-        <th>Running total</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>France (Jan 17 – Apr 7)</td><td>81</td><td>81</td></tr>
-      <tr><td>Greece transit (~Jul 15–18)</td><td>3</td><td>84</td></tr>
-      <tr><td><em>Gap: Jul 18 – Sep 5 (non-Schengen)</em></td><td>—</td><td>—</td></tr>
-      <tr><td>Italy entry ~Sep 5</td><td>Available: ~55 days</td><td>—</td></tr>
-      <tr><td>Alps loop (Sep 5 – ~Oct 20)</td><td>~45</td><td>48 in current window</td></tr>
-      <tr><td><strong>Buffer remaining</strong></td><td><strong>~7–10 days</strong></td><td>—</td></tr>
-    </tbody>
-  </table>
-  <p style="font-size: 0.85rem; color: var(--text-muted);">
-    By Oct 4, all France days fall outside the 180-day window → nearly full 90-day reset. Loop is comfortable.
-  </p>
-
-  <h2>Budget</h2>
-
-  <table>
-    <thead>
-      <tr><th>Country</th><th>€/day</th><th>Days</th><th>Total</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Georgia</td><td>12</td><td>14</td><td>€170</td></tr>
-      <tr><td>Turkey</td><td>12</td><td>40</td><td>€480</td></tr>
-      <tr><td>Greece</td><td>22</td><td>3</td><td>€65</td></tr>
-      <tr><td>Albania</td><td>12</td><td>17</td><td>€200</td></tr>
-      <tr><td>Montenegro</td><td>18</td><td>12</td><td>€215</td></tr>
-      <tr><td>Italy (Apennines + Dolomites)</td><td>24</td><td>26</td><td>€615</td></tr>
-      <tr><td>Austria</td><td>25</td><td>7</td><td>€175</td></tr>
-      <tr><td>Switzerland</td><td>35</td><td>12</td><td>€420</td></tr>
-      <tr><td>France (Alps)</td><td>22</td><td>14</td><td>€310</td></tr>
-      <tr><td colspan="3"><strong>Living subtotal</strong></td><td><strong>€2,650</strong></td></tr>
-      <tr><td colspan="3">Flights, trains, ferries</td><td>€1,550</td></tr>
-      <tr><td colspan="3">Bike maintenance & spares</td><td>€250</td></tr>
-      <tr><td colspan="3"><strong>Grand total</strong></td><td><strong>~€4,450</strong></td></tr>
-    </tbody>
-  </table>
-
-
+    <table>
+        <thead>
+            <tr><th>Country</th><th>€/day</th><th>Days</th><th>Total</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Georgia</td><td>12</td><td>14</td><td>€170</td></tr>
+            <tr><td>Turkey</td><td>12</td><td>40</td><td>€480</td></tr>
+            <tr><td>Greece</td><td>22</td><td>3</td><td>€65</td></tr>
+            <tr><td>Albania</td><td>12</td><td>17</td><td>€200</td></tr>
+            <tr><td>Montenegro</td><td>18</td><td>12</td><td>€215</td></tr>
+            <tr
+                ><td>Italy (Apennines + Dolomites)</td><td>24</td><td>26</td><td
+                    >€615</td
+                ></tr
+            >
+            <tr><td>Austria</td><td>25</td><td>7</td><td>€175</td></tr>
+            <tr><td>Switzerland</td><td>35</td><td>12</td><td>€420</td></tr>
+            <tr><td>France (Alps)</td><td>22</td><td>14</td><td>€310</td></tr>
+            <tr
+                ><td colspan="3"><strong>Living subtotal</strong></td><td
+                    ><strong>€2,650</strong></td
+                ></tr
+            >
+            <tr><td colspan="3">Flights, trains, ferries</td><td>€1,550</td></tr
+            >
+            <tr><td colspan="3">Bike maintenance & spares</td><td>€250</td></tr>
+            <tr
+                ><td colspan="3"><strong>Grand total</strong></td><td
+                    ><strong>~€4,450</strong></td
+                ></tr
+            >
+        </tbody>
+    </table>
 </Layout>
